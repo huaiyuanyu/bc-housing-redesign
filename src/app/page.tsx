@@ -1,6 +1,5 @@
 "use client"
 
-import Image from "next/image";
 import { useState, useEffect } from "react";
 
 import Filters from "@/types/Filters";
@@ -8,7 +7,6 @@ import Job from "@/types/Job";
 
 import jobs from "@/data/jobs.json"
 
-import TestComp from "./testcomp";
 import Header from "../components/common/header";
 import NavBar from "@/components/common/navbar";
 import Filter from "@/components/searchfilters";

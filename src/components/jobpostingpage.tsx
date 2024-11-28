@@ -75,10 +75,10 @@ export default function JobPostingPage({job}: JobPostingPageProps) {
                 Position Summary
               </h2>
               <p className="text-center font-bold">
-                To be considered for this role, applications MUST be submitted online, by clicking on the 'Apply' button above.
+                To be considered for this role, applications MUST be submitted online, by clicking on the &#39;Apply&#39; button above.
               </p>
               <ul className="list-disc py-4 pl-10">
-                <li>Join one of BC's Top Employers!</li>
+                <li>Join one of BC&#39;s Top Employers!</li>
                 <li>Be part of an exceptional company culture with great employee benefits and a healthy work/life balance!</li>
               </ul>
               <p className="font-semibold text-red-500">
@@ -186,7 +186,7 @@ export default function JobPostingPage({job}: JobPostingPageProps) {
               If you are passionate about what you do and want to use your expertise to engage in meaningful and challenging work, please apply to join our team today at <a href="https://www.bchousing.org/careers" className="text-blue-700">www.bchousing.org/careers.</a>
             </p>
             <p className="pb-2">
-              At BC Housing, we're committed to providing a healthy, safe and inclusive workplace where respect and diversity are recognized assets. We invite and welcome applications from women, visible minorities, Indigenous People, People with Disabilities, people of all sexual orientations and gender identities, and all people committed to meaningful work that makes a difference.  We are committed to providing an inclusive and barrier-free work environment, starting with the hiring process. If you require accommodations at any point during the application and hiring process, please contact <a href="mailto:hr_admin@bchousing.org" className="text-blue-700">hr_admin@bchousing.org.</a>
+              At BC Housing, we&#39;re committed to providing a healthy, safe and inclusive workplace where respect and diversity are recognized assets. We invite and welcome applications from women, visible minorities, Indigenous People, People with Disabilities, people of all sexual orientations and gender identities, and all people committed to meaningful work that makes a difference.  We are committed to providing an inclusive and barrier-free work environment, starting with the hiring process. If you require accommodations at any point during the application and hiring process, please contact <a href="mailto:hr_admin@bchousing.org" className="text-blue-700">hr_admin@bchousing.org.</a>
             </p>
             <p className="pb-2">
               We didn&#39;t become one of BC&#39;s Top Employers and one of Canada&#39;s Greenest Employers without a lot of thought, care and consideration for our team and environment. Our supportive and collaborative workplace balances engaging and challenging work with personal development and wellness initiatives.
