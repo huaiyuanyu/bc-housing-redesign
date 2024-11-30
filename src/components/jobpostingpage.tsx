@@ -30,37 +30,39 @@ export default function JobPostingPage({job}: JobPostingPageProps) {
 
   return (
     <>
-      <div className="flex flex-col mb-10">
-        <div className="grow bg-gray-300 p-2 font-bold flex items-center justify-between sticky top-0">
-          {prevJob ? (
-            <a href={`/jobs/${prevJob.JobID}`}>
-              <button className="text-xs sm:text-lg">
-                &lt; Previous Job
-              </button>
-            </a>
-          ) : (
-            <button className="mx-3 text-gray-300" disabled>
-              Previous Job
-            </button>
-          )}
-          <h1 className="absolute text-center left-1/2 transform -translate-x-1/2">
-            {job.JobTitle}
-          </h1>
-          <div>
-            <button className="bg-secondary text-white font-semibold p-2 mr-2 rounded-md hover:bg-black hidden sm:inline-block">
-              Apply for Job
-            </button>
-            {nextJob ? (
-              <a href={`/jobs/${nextJob.JobID}`}>
+      <div className="flex flex-col mb-10 ">
+        <div className="grow bg-gray-300 sticky top-0">
+          <div className="md:w-11/12 md:m-auto p-2 font-bold flex items-center justify-between ">
+            {prevJob ? (
+              <a href={`/jobs/${prevJob.JobID}`}>
                 <button className="text-xs sm:text-lg">
-                  Next Job &gt;
+                  &lt; Previous Job
                 </button>
               </a>
             ) : (
               <button className="mx-3 text-gray-300" disabled>
-                Next Job
+                Previous Job
               </button>
             )}
+            <h1 className="absolute text-center left-1/2 transform -translate-x-1/2">
+              {job.JobTitle}
+            </h1>
+            <div>
+              <button className="bg-secondary text-white font-semibold p-2 mr-2 rounded-md hover:bg-black hidden sm:inline-block">
+                Apply for Job
+              </button>
+              {nextJob ? (
+                <a href={`/jobs/${nextJob.JobID}`}>
+                  <button className="text-xs sm:text-lg">
+                    Next Job &gt;
+                  </button>
+                </a>
+              ) : (
+                <button className="mx-3 text-gray-300" disabled>
+                  Next Job
+                </button>
+              )}
+            </div>
           </div>
         </div>
         <div className="flex flex-col m-auto w-11/12">
