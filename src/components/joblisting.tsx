@@ -43,7 +43,7 @@ export default function JobListing({jobList}: JobListingProps) {
           {jobList.length} jobs found.
         </div>
 
-        <div className="flex w-full h-screen">
+        <div className="flex w-full">
           <div className="w-full h-5/6 overflow-y-scroll border-r border-gray-300">
             {jobList.map((job) => (
               <div 
@@ -81,7 +81,7 @@ export default function JobListing({jobList}: JobListingProps) {
           
         </div>
       </div>
-      <div className="w-1/2 sticky -translate-y-0 top-0 hidden sm:block border-x-2 border-headercolor">
+      <div className="w-1/2 h-5/6 sticky -translate-y-0 top-0 hidden sm:block border-x-2 border-b-2 border-headercolor">
           <JobPostingModal job={currentJob} />
       </div>
     </div>

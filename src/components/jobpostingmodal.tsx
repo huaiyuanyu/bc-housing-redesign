@@ -26,7 +26,9 @@ export default function JobPostingModal({job}: JobPostingModalProps) {
   return (
     <div className="flex flex-col">
       <div className="grow bg-headercolor text-white font-bold flex items-center justify-between">
-        <h1 className="pl-4">{job.JobTitle}</h1>
+        <a href={`/jobs/${job.JobID}`}>
+          <h1 className="pl-4">{job.JobTitle}</h1>
+        </a>
         <div className="flex items-center ml-auto">
           <a href={`/jobs/${job.JobID}`}>
             <Image src={NewWindowIcon} alt="Open in New Tab" height={20} />
