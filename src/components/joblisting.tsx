@@ -37,50 +37,52 @@ export default function JobListing({jobList}: JobListingProps) {
   }
 
   return (
-    <div className="mt-2 w-full">
+    <div className="mt-2 w-full flex border-2 border-headercolor">
+      <div className="w-full md:w-1/2">
+        <div className="border-b-2 border-slate-500 md:text-xl sticky top-0 bg-white z-10 pb-2 pl-1">
+          {jobList.length} jobs found.
+        </div>
 
-      <div className="border-b-2 border-slate-500 sticky top-0 bg-white z-10 pb-1 pl-1">
-        {jobList.length} jobs found.
-      </div>
-
-      <div className="flex w-full h-screen">
-        <div className="w-full md:w-1/2 h-5/6 overflow-y-scroll border-r border-gray-300">
-          {jobList.map((job) => (
-            <div 
-              key={job.JobID}
-              className={`
-                pl-4 border-b-2 border-black cursor-pointer hover:bg-gray-300
-                ${job.JobID === currentJob.JobID && !isMobile ? 'bg-gray-300' : ''}
-                sm:${job.JobID === currentJob.JobID ? 'bg-gray-300' : ''}
-              `}
-              onClick={() => handleJobClick(job)}
-            >
-              <a 
-                href={`/jobs/${job.JobID}`}
-                className="sm:pointer-events-none"
+        <div className="flex w-full h-screen">
+          <div className="w-full h-5/6 overflow-y-scroll border-r border-gray-300">
+            {jobList.map((job) => (
+              <div 
+                key={job.JobID}
+                className={`
+                  pl-4 border-b-2 border-black cursor-pointer hover:bg-gray-300
+                  ${job.JobID === currentJob.JobID && !isMobile ? 'bg-gray-300' : ''}
+                  sm:${job.JobID === currentJob.JobID ? 'bg-gray-300' : ''}
+                `}
+                onClick={() => handleJobClick(job)}
               >
-                <div className="font-bold">
-                  {job.JobTitle}
-                </div>
-                <div className="pl-4">
-                  <span className="text-headercolor font-semibold">Job ID</span> {job.JobID}
-                </div>
-                <div className="pl-4">
-                  <span className="text-headercolor font-semibold">Location</span> {job.JobLocation}
-                </div>
-                <div className="pl-4">
-                  <span className="text-headercolor font-semibold">Department</span> {job.Department}
-                </div>
-                <div className="pl-4">
-                  <span className="text-headercolor font-semibold">Posted Date</span> {new Date(job.PostedDate).toLocaleDateString()}
-                </div>
-              </a>
-            </div>
-          ))}
+                <a 
+                  href={`/jobs/${job.JobID}`}
+                  className="sm:pointer-events-none"
+                >
+                  <div className="font-bold">
+                    {job.JobTitle}
+                  </div>
+                  <div className="pl-4">
+                    <span className="text-headercolor font-semibold">Job ID</span> {job.JobID}
+                  </div>
+                  <div className="pl-4">
+                    <span className="text-headercolor font-semibold">Location</span> {job.JobLocation}
+                  </div>
+                  <div className="pl-4">
+                    <span className="text-headercolor font-semibold">Department</span> {job.Department}
+                  </div>
+                  <div className="pl-4">
+                    <span className="text-headercolor font-semibold">Posted Date</span> {new Date(job.PostedDate).toLocaleDateString()}
+                  </div>
+                </a>
+              </div>
+            ))}
+          </div>
+          
         </div>
-        <div className="w-1/2 sticky top-0 hidden sm:block">
+      </div>
+      <div className="w-1/2 sticky -translate-y-0 top-0 hidden sm:block border-2 border-headercolor">
           <JobPostingModal job={currentJob} />
-        </div>
       </div>
     </div>
   )

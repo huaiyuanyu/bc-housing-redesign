@@ -25,13 +25,13 @@ export default function JobPostingModal({job}: JobPostingModalProps) {
 
   return (
     <div className="flex flex-col">
-      <div className="grow bg-secondary p-2 text-white font-bold flex items-center justify-between">
-        <h1>{job.JobTitle}</h1>
+      <div className="grow bg-headercolor p-[0.5px] text-white font-bold flex items-center justify-between">
+        <h1 className="pl-4">{job.JobTitle}</h1>
         <div className="flex items-center ml-auto">
           <a href={`/jobs/${job.JobID}`}>
             <Image src={NewWindowIcon} alt="Open in New Tab" height={20} />
           </a>
-          <button className="mx-3">
+          <button className="ml-3 mb-1 bg-secondary hover:bg-black py-1 px-2 rounded-md">
               Apply to Job
           </button>
         </div>
