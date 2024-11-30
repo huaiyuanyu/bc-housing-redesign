@@ -6,7 +6,7 @@ import Link from 'next/link'
 export default function NavBar({content}: {content: string}) {
   //page name varies and will be in the center. On the right side will be two Icons for navigational purposes.
   return (
-    <div className="bg-secondary p-2">
+    <div className="bg-secondary p-2 sticky top-0 sm:static sm:top-auto">
       <div className="flex items-center justify-between text-white md:w-11/12 md:m-auto">
         <div className="flex-1"></div>
         <div className="flex-none flex items-end justify-center self-stretch">

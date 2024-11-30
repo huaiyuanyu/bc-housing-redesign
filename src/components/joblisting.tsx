@@ -39,7 +39,7 @@ export default function JobListing({jobList}: JobListingProps) {
   return (
     <div className="mt-2 w-full flex">
       <div className="w-full md:w-1/2">
-        <div className="border-b-2 border-slate-500 sticky top-0 bg-white z-10 pb-2 pl-4">
+        <div className="border-b-2 border-slate-500 sticky top-11 md:top-0 bg-white z-10 pb-2 pl-4">
           {jobList.length} jobs found.
         </div>
 
