@@ -43,7 +43,7 @@ export default function JobPostingPage({job}: JobPostingPageProps) {
               Previous Job
             </button>
           )}
-          <h1 className="absolute left-1/2 transform -translate-x-1/2">
+          <h1 className="absolute text-center left-1/2 transform -translate-x-1/2">
             {job.JobTitle}
           </h1>
           <div>
@@ -65,7 +65,7 @@ export default function JobPostingPage({job}: JobPostingPageProps) {
         </div>
         <div className="flex flex-col m-auto w-11/12">
           <div className="p-4">
-            <div className="flex justify-end sticky top-14 inline-block sm:hidden">
+            <div className="fixed bottom-4 right-4 inline-block sm:hidden">
               <button className="bg-secondary text-white font-semibold p-2 rounded-md hover:bg-black ">
                 Apply for Job
               </button>
@@ -74,7 +74,7 @@ export default function JobPostingPage({job}: JobPostingPageProps) {
               <h2 className="text-4xl font-bold">
                 Position Summary
               </h2>
-              <p className="text-center font-bold">
+              <p className="md:text-center font-bold">
                 To be considered for this role, applications MUST be submitted online, by clicking on the &#39;Apply&#39; button above.
               </p>
               <ul className="list-disc py-4 pl-10">
