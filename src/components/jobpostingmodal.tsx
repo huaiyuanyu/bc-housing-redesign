@@ -36,8 +36,8 @@ export default function JobPostingModal({job}: JobPostingModalProps) {
           </button>
         </div>
       </div>
-      <div className="grow p-4">
-        <div className="my-2">
+      <div className="grow px-4 py-2">
+        <div>
           <h2 className="text-2xl font-bold">
             Position Summary
           </h2>
