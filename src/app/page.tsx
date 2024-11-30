@@ -88,9 +88,9 @@ export default function Home() {
           </div>
         )}
         <div className="w-full">
-            <div className="flex justify-end sticky top-14 inline-block sm:hidden z-10">
+            <div className="flex justify-end h-0 sticky top-14 inline-block sm:hidden z-10">
               <button
-                className="bg-secondary text-white font-semibold p-2 rounded-b-md hover:bg-black"
+                className="bg-secondary text-white font-semibold p-2 hover:bg-black relative -translate-y-11"
                 onClick={() => setMobileFilterVisible(true)}  
               >
                 Show Filters

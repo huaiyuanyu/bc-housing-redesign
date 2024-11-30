@@ -15,9 +15,19 @@ export default function NavBar({content}: {content: string}) {
       </div>
       <div className="flex-1 flex justify-end space-x-4">
         <Link href="/">
-          <Image src={JobIcon} alt="Jobs Page" height={30} />
+          <Image
+            src={JobIcon}
+            alt="Jobs Page"
+            height={30}
+            className="relative -translate-y-10 md:translate-y-0"
+          />
         </Link>
-        <Image src={UserIcon} alt="User Profile" height={30} />
+        <Image
+          src={UserIcon}
+          alt="User Profile"
+          height={30}
+          className="relative -translate-y-10 md:translate-y-0"
+        />
       </div>
     </div>
   )
