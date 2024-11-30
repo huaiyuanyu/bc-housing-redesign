@@ -68,7 +68,7 @@ export default function Home() {
     <>
       <Header />
       <NavBar content="Search Jobs"/>
-      <div className="flex flex-row h-screen">
+      <div className="flex flex-row h-screen md:w-11/12 md:m-auto">
         <div className="inline-flex flex-col">
           <div className="sticky top-0 hidden sm:block">
             <Filter filters={filters} onFilterChange={updateFilters} />
