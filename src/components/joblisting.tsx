@@ -37,7 +37,7 @@ export default function JobListing({jobList}: JobListingProps) {
   }
 
   return (
-    <div className="mt-2 w-full flex border-2 border-headercolor">
+    <div className="mt-2 w-full flex">
       <div className="w-full md:w-1/2">
         <div className="border-b-2 border-slate-500 sticky top-0 bg-white z-10 pb-2 pl-4">
           {jobList.length} jobs found.
@@ -81,7 +81,7 @@ export default function JobListing({jobList}: JobListingProps) {
           
         </div>
       </div>
-      <div className="w-1/2 sticky -translate-y-0 top-0 hidden sm:block border-2 border-headercolor">
+      <div className="w-1/2 sticky -translate-y-0 top-0 hidden sm:block border-x-2 border-headercolor">
           <JobPostingModal job={currentJob} />
       </div>
     </div>
